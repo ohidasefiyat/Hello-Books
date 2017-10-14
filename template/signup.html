@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Hello-Books</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" type="text/css" href="signup.css">
+  </head>
+  <body>
+  <div class="container">
+  <nav class="navbar navbar-expand-sm navbar-light bg-faded">
+	 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+	</button>
+  <a class="navbar-brand" href="index.html">Hello-Books</a>
+
+  <!-- links for nab -->
+
+  <div class="collapse navbar-collapse" id="nav-content">
+  	<ul class="nav navbars-nav justify-content-end">
+
+		<li class="nav-item"><a class="nav-link active" href="signup.html"><span class="glyphicon glyphicon-user"></span>Sign up</a></li>
+		<li class="nav-item"><a class="btn nav-link" role="button" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+		<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+        <h4 class="modal-title">Login</h4>
+      </div>
+      <div class="modal-body">
+        <form action="" method="" role="form">
+            <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email" name="email_login">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd" name="password_login">
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox"> Remember me</label>
+  </div>
+  <button type="submit" class="btn btn-danger">Submit</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div></li>
+
+			
+	</ul>
+
+
+  </div>
+
+
+  <!-- Search -->
+<!-- <form class="form-inline" role="search">
+<input type="text" class="">
+<button type="submit" class="btn btn-secondary">Search</button>
+</form> -->
+
+</nav>
+<div class="container conExtra ">
+<h1 class="well text-center">Registration</h1>
+<form class="form-inline ">
+<table class="">
+  <thead><legend> login information</legend></thead>
+  <tbody>
+    <tr >
+      <td><label id="label1" class="control-labels">Email Address<span>*</span></label></td>
+      <td><input type="email" name="email_add" class="form-control"></td>
+   
+      <td><label id="label2" class="control-labels" >Password<span>*</span></label></td>
+      <td id="label3"><input type="email" name="email_add" class="form-control"></td>
+  
+    </tr>
+
+    <tr >
+      <td><label id="label1" class="control-labels">Retype Email Address<span>*</span></label></td>
+      <td><input type="email" name="email_add" class="form-control"></td>
+  
+      <td><label id="label2" class="control-labels">Retype Password<span>*</span></label></td>
+      <td><input type="email" name="email_add" class="form-control"></td>
+    </tr>
+
+  </tbody>
+</table>
+
+<table>
+  <thead><legend> Personal information</legend></thead>
+  <tbody>
+    <tr >
+      <td><label id="label1" class="control-labels" for="fname">First Name<span>*</span></label></td>
+      <td><input type="text" name="fname" class="form-control" placeholder="Enter your first Name"></td>
+
+      <td><label id="label2" class="control-labels">Country/Loction<span>*</span></label></td>
+      <td>
+        <select class="form-control">
+          <option>Select your country</option>
+        </select>
+      </td>
+      
+  
+    </tr>
+
+    <tr >
+      <td><label id="label1" >Last Name<span>*</span></label></td>
+      <td id="label3"><input type="text" name="lname" class="form-control" placeholder="Enter your last name"></td>
+  
+      <td><label id="label2" >Area of Interest<span>*</span></label></td>
+      <td><input type="email" name="email_add" class="form-control"></td>
+    </tr>
+
+  </tbody>
+</table>
+
+
+<table class="">
+  <thead><legend> login information</legend></thead>
+  <tbody>
+    <tr >
+      <td><input type="checkbox" name="check1" style="margin-right: 10px;">Will you like to receive updates from us</td>
+    </tr>
+
+    <tr >
+       <td> <input type="checkbox" name="check2" style="margin-right: 10px;"> Please include me on your mailing list to receive brochures and other printed information about books and journals in my subject area</td>
+    </tr>
+
+  </tbody>
+</table>
+<input type="submit" name="submit" class="btn-secondary form-control" value="submit">
+</form>
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+</html>
