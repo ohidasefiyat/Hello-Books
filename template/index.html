@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- The front page of Hello-Book -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,7 +28,7 @@
 	
  <h3 style="background: white; -webkit-border-radius: 5px; padding: 0px; margin: 0px; display: inline-block;"> <a class="navbar-brand " href="index.html">Hello-Books</a></h3>
 
-  <!-- links for nab -->
+  <!-- links for nav -->
 
   <div class="collapse navbar-collapse " id="nav-content">
   	<ul class="nav navbars-nav justify-content-end  ">
@@ -40,31 +40,31 @@
 		<li class="nav-item "><a class="nav-link active" href="signup.html"><span class="glyphicon glyphicon-user"></span>Sign up</a></li>
 		<li class="nav-item"><a class="btn nav-link" role="button" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</a>
 		<!-- Modal -->
-				<div id="myModal" class="modal fade" role="dialog">
+			<div id="myModal" class="modal fade" role="dialog">
  			    <div class="modal-dialog">
 
     <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
-        <h4 class="modal-title">Login</h4>
-      </div>
-      <div class="modal-body">
-        <form action="" method="" role="form">
-            <div class="form-group">
-    <label for="email">Email address:</label>
-    <input type="email" class="form-control" id="email" name="email_login">
-  </div>
-  <div class="form-group">
-    <label for="pwd">Password:</label>
-    <input type="password" class="form-control" id="pwd" name="password_login">
-  </div>
-  <div class="checkbox">
-    <label><input type="checkbox"> Remember me</label>
-  </div>
-  <button type="submit" class="btn btn-danger">Submit</button>
-        </form>
-      </div>
+   			    <div class="modal-content">
+     			 <div class="modal-header">
+        			<button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+        			<h4 class="modal-title">Login</h4>
+      			</div>
+      		<div class="modal-body">
+       			<form action="" method="" role="form">
+             		<div class="form-group">
+    					<label for="email">Email address:</label>
+    					<input type="email" class="form-control" id="email" name="email_login">
+  					</div>
+  					<div class="form-group">
+   						<label for="pwd">Password:</label>
+   						 <input type="password" class="form-control" id="pwd" name="password_login">
+  					</div>
+  					<div class="checkbox">
+   				    	<label><input type="checkbox"> Remember me</label>
+  					</div>
+  					<button type="submit" class="btn btn-danger">Submit</button>
+       			</form>
+      		</div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
@@ -87,29 +87,45 @@
 			<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Browse Books </a>
         		<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
          		 <a class="dropdown-item" href="#">Science</a>
-         		 <a class="dropdown-item" href="#">Romance</a>
+         		 <a class="dropdown-item" href="#">Arts</a>
          		 <a class="dropdown-item" href="#">TextBooks</a>
          		 <a class="dropdown-item" href="#">Reading Lists</a>
          		 <a class="dropdown-item" href="#">Encyclopia</a>
-         		 <a class="dropdown-item" href="#">Fantasy</a>
+         		 <a class="dropdown-item" href="#">Accounting</a>
         		</div>
         	</li>
-			<li class="nav-item"><a href="" class="nav-link"> Publications</a></li>
+			<li class="nav-item"><a href="catalog.html" class="nav-link"> Catalog</a></li>
 			<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More </a>
         		<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-         		 <a class="dropdown-item" href="#">Book Details</a>
-         		 <a class="dropdown-item" href="#">Catalog</a>
          		 <a class="dropdown-item" href="#">Favourite</a>
          		 <a class="dropdown-item" href="#">Borrow/Return</a>
          		 
         		</div>
         	</li>
-        	<li class="nav-item"><a href="" class="nav-link"> Browse By Subjects</a></li>
+        	<li class="nav-item"><a href="preview.html" class="nav-link"> Book Details</a></li>
 		</ul>
 	</div>
 	</nav>
 
+<div class="carousel" data-ride="carousel">
+	<div class="carousel-inner" role="listbox">
+		<div class="carousel-item active">
+      		<img class="d-block img-fluid" src="images/sanddune_full.jpg" alt="Second slide">
+    	</div>
+    </div>	
+</div>
+
+<div class="row col-md-12 justify-content-center about" >
+	<h3>About Hello-Books</h3>
+</div>
+<div class="row col-md-12 justify-content-center" >
+	<p>Carousels don’t automatically normalize slide dimensions. As such, you may need to use additional utilities or custom styles to appropriately size content. While carousels support previous/next controls and indicators, they’re not explicitly required. Add and customize as you see fit.
+
+        Be sure to set a unique id on the .carousel for optional controls, especially if you’re using multiple carousels on a single page.</p>
+</div>
 	
+
+
 </div>
 
 
