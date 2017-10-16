@@ -1,0 +1,147 @@
+<!-- The front page of Hello-Book -->
+<!DOCTYPE html>
+<html>
+<head>
+	<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Hello-Books</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+  <body>
+  <div class="">
+  <header class="navbar navbar-expand-sm navbar-light ">
+	 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+	</button>
+	
+ <h3 style="background: white; -webkit-border-radius: 5px; padding: 0px; margin: 0px; display: inline-block;"> <a class="navbar-brand " href="index.html">Hello-Books</a></h3>
+
+  <!-- links for nav -->
+
+  <div class="collapse navbar-collapse " id="nav-content">
+  	<ul class="nav navbars-nav justify-content-end  ">
+
+  		<li><form class="form-inline my-2 my-lg-0">
+     	 <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      	 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    	</form></li>
+		<li class="nav-item "><a class="nav-link active" href="signup.html"><span class="glyphicon glyphicon-user"></span>Sign up</a></li>
+		<li class="nav-item"><a class="btn nav-link" role="button" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+		<!-- Modal -->
+			<div id="myModal" class="modal fade" role="dialog">
+ 			    <div class="modal-dialog">
+
+    <!-- Modal content-->
+   			    <div class="modal-content">
+     			 <div class="modal-header">
+        			<button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+        			<h4 class="modal-title">Login</h4>
+      			</div>
+      		<div class="modal-body">
+       			<form action="" method="" role="form">
+             		<div class="form-group">
+    					<label for="email">Email address:</label>
+    					<input type="email" class="form-control" id="email" name="email_login">
+  					</div>
+  					<div class="form-group">
+   						<label for="pwd">Password:</label>
+   						 <input type="password" class="form-control" id="pwd" name="password_login">
+  					</div>
+  					<div class="checkbox">
+   				    	<label><input type="checkbox"> Remember me</label>
+  					</div>
+  					<button type="submit" class="btn btn-danger">Submit</button>
+       			</form>
+      		</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div></li>
+
+			
+	</ul>
+ 
+
+  </div>
+</header>
+<!--end of first header where signup is included  -->
+<div class="container">
+	<nav class="navbar navbar-toggleable-md navbar-light bg-faded well well-sm">
+	
+	<div class="collapse navbar-collapse webkit-border-radius " id="nav-content">
+		<ul class="nav navbar-tabs">
+			<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Browse Books </a>
+        		<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+         		 <a class="dropdown-item" href="#">Science</a>
+         		 <a class="dropdown-item" href="#">Arts</a>
+         		 <a class="dropdown-item" href="#">TextBooks</a>
+         		 <a class="dropdown-item" href="#">Reading Lists</a>
+         		 <a class="dropdown-item" href="#">Encyclopia</a>
+         		 <a class="dropdown-item" href="#">Accounting</a>
+        		</div>
+        	</li>
+			<li class="nav-item"><a href="catalog.html" class="nav-link"> Catalog</a></li>
+			<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More </a>
+        		<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+         		 <a class="dropdown-item" href="#">Favourite</a>
+         		 <a class="dropdown-item" href="#">Borrow/Return</a>
+         		 
+        		</div>
+        	</li>
+        	<li class="nav-item"><a href="preview.html" class="nav-link"> Book Details</a></li>
+		</ul>
+	</div>
+	</nav>
+
+<div class="carousel" data-ride="carousel">
+	<div class="carousel-inner" role="listbox">
+		<div class="carousel-item active">
+      		<img class="d-block img-fluid" src="images/sanddune_full.jpg" alt="Second slide">
+    	</div>
+    </div>	
+</div>
+
+<div class="row col-md-12 justify-content-center about" >
+	<h3>About Hello-Books</h3>
+</div>
+<div class="row col-md-12 justify-content-center" >
+	<p>Carousels don’t automatically normalize slide dimensions. As such, you may need to use additional utilities or custom styles to appropriately size content. While carousels support previous/next controls and indicators, they’re not explicitly required. Add and customize as you see fit.
+
+Be sure to set a unique id on the .carousel for optional controls, especially if you’re using multiple carousels on a single page.</p>
+</div>
+	
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+</html>
