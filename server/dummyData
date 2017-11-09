@@ -1,0 +1,38 @@
+const dummyData = {
+	books: [
+		{
+			"bookId": "1",
+			"bookTitle": "the love",
+			"author": "Yinka Ade",
+			"published": "2012"
+
+		},
+		{
+			"bookId": "2",
+			"bookTitle": "the Bet",
+			"author": "Lious Ade",
+			"published": "1990"
+
+		},
+		{
+			"bookId": "3",
+			"bookTitle": "the dance",
+			"author": "Yinka moji",
+			"published": "2000"
+
+		}
+	],
+
+	users: [
+		{
+			userId: '1',
+			fname: 'waziri',
+			lname: 'tanko',
+			email: 'waziri@yahoo.com'
+		}
+	]
+};
+
+let express = require('express');
+let api = express();
+module.exports = dummyData;

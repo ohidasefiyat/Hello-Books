@@ -1,0 +1,24 @@
+{
+  "name": "hello-books",
+  "version": "1.0.0",
+  "description": "Let users use library service for conveniency",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon ./bin/www",
+  	"test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository":{
+    "type": "git",
+    "url": "https://github.com/ohidasefiyat/Hello-Books/"
+  },
+  "author": "Sefiyat",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}
